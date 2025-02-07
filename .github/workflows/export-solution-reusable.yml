@@ -51,7 +51,7 @@ jobs:
       CLIENT_ID: ${{ secrets.AAD_CLIENT_ID }}
       AAD_APP_SECRET: ${{ secrets.AAD_APP_SECRET }}
       TENANT_ID: ${{ secrets.AAD_TENANT_ID }}
-      CLOUD: 'UsGov' # UsGov => GCC, UsGovHigh => GCCH, UsGovDod => DOD
+      CLOUD: 'Public' # UsGov => GCC, UsGovHigh => GCCH, UsGovDod => DOD
 
     steps:
     - uses: actions/checkout@v2
