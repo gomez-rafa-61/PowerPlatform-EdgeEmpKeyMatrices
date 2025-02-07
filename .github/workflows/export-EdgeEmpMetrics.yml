@@ -1,4 +1,4 @@
-name: Export HelloWorldCanvasApp Solution
+name: Export ADO80899-EdgeEmpMetrics Solution
 # Call the reusable workflow release-solution-with-inputs.yml
 # Release your solution to prod when you create a new release.
 
@@ -10,9 +10,9 @@ jobs:
     uses: ./.github/workflows/export-solution-reusable.yml
     with:
       # You can specify the solution name here
-      SOLUTION_NAME: HelloWorldCanvasApp
+      SOLUTION_NAME: ADO80899 - Edge Emp Metrics
       # Update your actual cloud instance here (Public, UsGov, UsGovHigh, UsGovDoD)
-      CLOUD_TYPE: 'UsGov'
+      CLOUD_TYPE: 'Public'
     secrets:
       AAD_APP_SECRET: ${{ secrets.AAD_APP_SECRET }}
       AAD_CLIENT_ID: ${{ secrets.AAD_CLIENT_ID }}
